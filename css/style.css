@@ -1,0 +1,22 @@
+:root{--bg:#f4f7f6;--card:#fff;--text:#1b2b2a;--muted:#5f7371;--main:#0f766e;--done:#d9f2ec;--font:24px}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0e1716;--card:#16231f;--text:#e8f1ef;--muted:#93aaa6;--done:#12332d}}
+:root[data-theme=dark]{--bg:#0e1716;--card:#16231f;--text:#e8f1ef;--muted:#93aaa6;--done:#12332d}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0}
+body{background:var(--bg);color:var(--text);font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic",sans-serif;padding:env(safe-area-inset-top) 0 env(safe-area-inset-bottom)}
+header{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--main);color:#fff}
+h1{font-size:1.2rem;margin:0}
+.tools button{background:rgba(255,255,255,.2);color:#fff;border:0;border-radius:8px;padding:6px 10px;margin-inline-start:6px;font-size:1rem;cursor:pointer}
+nav{display:flex;gap:8px;overflow-x:auto;padding:12px 16px}
+nav button{flex:none;border:1px solid var(--main);background:transparent;color:var(--main);padding:8px 16px;border-radius:20px;font-size:1rem;cursor:pointer}
+nav button.active{background:var(--main);color:#fff}
+#progress{height:6px;margin:0 16px;background:var(--done);border-radius:3px;overflow:hidden}
+#bar{height:100%;width:0;background:var(--main);transition:width .3s}
+main{max-width:700px;margin:0 auto;padding:16px}
+.card{background:var(--card);border-radius:16px;padding:18px;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.08);cursor:pointer;user-select:none;transition:background .2s}
+.card.done{background:var(--done);opacity:.8}
+.text{font-size:var(--font);line-height:2;margin:0 0 10px;text-align:center}
+.note{color:var(--muted);font-size:.85rem;text-align:center;margin:0 0 10px}
+.count{display:block;margin:0 auto;width:fit-content;min-width:90px;text-align:center;padding:8px 18px;border-radius:24px;background:var(--main);color:#fff;font-size:1.1rem}
+footer{text-align:center;padding:8px 0 28px}
+#reset{background:transparent;border:1px solid var(--muted);color:var(--muted);padding:8px 18px;border-radius:8px;cursor:pointer}
