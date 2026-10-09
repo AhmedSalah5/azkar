@@ -1,4 +1,4 @@
-const CACHE = "azkar-v3";
+const CACHE = "azkar-v4";
 const SHELL = ["./", "index.html", "css/style.css", "js/data.js", "js/app.js", "manifest.json", "icons/icon.svg", "icons/icon-192.png", "icons/icon-512.png"];
 
 // استجابات إعادة التوجيه لا يمكن استخدامها في التنقل بين الصفحات، لذا نعيد بناء نسخة نظيفة

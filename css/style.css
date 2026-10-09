@@ -20,3 +20,4 @@ main{max-width:700px;margin:0 auto;padding:16px}
 .count{display:block;margin:0 auto;width:fit-content;min-width:90px;text-align:center;padding:8px 18px;border-radius:24px;background:var(--main);color:#fff;font-size:1.1rem}
 footer{text-align:center;padding:8px 0 28px}
 #reset{background:transparent;border:1px solid var(--muted);color:var(--muted);padding:8px 18px;border-radius:8px;cursor:pointer}
+.ayah{display:inline-flex;align-items:center;justify-content:center;min-width:1.6em;height:1.6em;padding:0 .2em;border:1.5px solid var(--main);border-radius:50%;font-size:.55em;line-height:1;color:var(--main);margin-inline:.3em;vertical-align:middle;font-family:system-ui,sans-serif}
